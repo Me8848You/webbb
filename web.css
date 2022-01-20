@@ -22,19 +22,24 @@ li a{
 }
 .link{
     position: absolute;
-    bottom: 150px;
+    top: 150px;
     right: 0px;
     /* float: right;
     clear: left; */
 
 
 }
+
 .link ul li{
-    margin:5px;
+    margin: 5px;
     padding: 5px;
     bottom: 0px;
     text-align: center;
-    
+}
+.link ul li a{
+    color: white;
+    font-size: 25px;
+    font-style: italic;
 }
 #li1{
     float: left;

@@ -11,16 +11,70 @@
             padding: 0;
         }
         .main{
-            background-image: url("images4.jpg");
+            background: rgb(33,213,208);
+            background: radial-gradient(circle, rgba(33,213,208,1) 21%, rgba(219,165,48,1) 49%, rgba(146,176,114,1) 49%, rgba(99,13,90,0.7903536414565826) 84%, rgba(194,182,182,1) 92%, rgba(100,17,22,1) 100%);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             height: 100vh;
             width: 100%;
+            /* margin: 12px; */
+            padding: 5px;
         }
         .first{
-            color: purple;
-            font-size: 23px;
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            text-align: center;
+            animation-name: example;
+            animation-duration: 4s;
+            
+        }
+        #a1{
+                animation-name: prog;
+                animation-duration: 6s;
+                animation-delay: 1s;
+                color: black;
+                font-size: 35px;
+                text-align: center;
+        }
+        #a2{
+                animation-name: prog;
+                animation-duration: 6s;
+                animation-delay: 2s;
+                color: black;
+                font-size: 35px;
+                text-align: center;
+        }
+        #a3{
+                animation-name: prog;
+                animation-duration: 6s;
+                animation-delay: 3s;
+                color: black;
+                font-size: 35px;
+                text-align: center;
+        }
+        #a4{
+                animation-name: prog;
+                animation-duration: 6s;
+                animation-delay: 4s;
+                color: black;
+                font-size: 35px;
+                text-align: center;
+        }
+        @keyframes example{
+            from{color: transparent;}
+            to{color: rgb(0, 0, 0); }
+        }
+        @keyframes prog{
+            from{color: transparent;  text-align: center;}
+            to{color: rgb(0, 0, 0); text-align: center;}
+        }
+        h2{
+            text-align: center;
+            margin: 5px;
+        }
+        #hh{
+            text-align: left;
         }
     </style>
 </head>
@@ -28,11 +82,22 @@
 <body>
     <div class="main">
 
-        <h2>Hello Mr./Mrs YOU!!!🥰</h2>
+        <h2 id="hh">Hello Mr./Mrs YOU!!!🥰</h2>
         <div class="first">
-            It's me Suman Sharma 
-            <p>The authentic programmer who loves to print just "Hello World !!!" But without "o"</p>
+            It's me <h2 id="hhh">Suman Sharma</h2> 
         </div>
+        <ul type="disc">
+
+            <li id="a1">Programmer</li>
+            <li id="a2">IT  Engineer</li>
+            <li id="a3">Free-Lancer</li>
+            <li id="a4">Content Cre.</li>
+        </ul>
+        <br>
+        <br>
+        <h2>
+            The authentic programmer who loves to print just "Hello World !!!" But without "o"
+        </h2>
     </div>
 </body>
 </html>
