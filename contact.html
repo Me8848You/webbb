@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us through</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .user ol li a{
             text-decoration: none;
@@ -28,10 +29,83 @@
             height: 100vh;
             
         }
+        .form{
+            border: 1px solid skyblue;
+            float: right; 
+            clear: both;
+            background-image: url("./img/images4.jpg" );
+            background-repeat: repeat;
+            border-radius: 25px;
+        }
+        .form tr td{
+            color: white;
+            font-size: 23px;
+            background-color: tomato;
+        }
+        h3{
+            color: rgb(2, 32, 1);
+            font-size: 23px;
+            animation-name: animation;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        label{
+            color:rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        label:hover{
+            background: white;
+            color: black;
+        }
+        @keyframes animation{
+            form{color: rgb(1, 248, 83);}
+            to{color: transparent;}
+        }
     </style>
 </head>
 <body>
-    <div class="user">
+    <div class="form">
+        <table border="1"></table>
+        <h3>Wanna talk...?*</h3>
+        <h3>If then, Please provide the following information.</h3>
+        <hr style="color: black; font-weight: bold;">
+        <p>
+            <tr>
+                <td ><label for="name" >Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+        </p>
+        <p>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" placeholder="Username@gmail.com" name="email" id="email"></td>
+            </tr>
+        </p>
+        <p>
+
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+        </p>
+        <p>
+            
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" name="address" id="address"></td>
+            </tr>
+        </p>
+        <p>
+            
+            <br>
+            <tr>
+                <!-- <td><label for="submit">Submit</label></td> -->
+                <th style="color: turquoise; font-size: 23px;"><input type="submit" value="Submit""></th>
+            </tr>
+        </p>
+    </div>
+    <span class="user">
         <h2 style="color: cyan;">You can directly contact Us through </h2>
         <ol type="1" style="font-size: 25px;">
             <li><a href="http://gmail.com" target="_blank" rel="noopener noreferrer"><img src="./img/email.png" width="35px " height="35px" t=""> Email</a></li>
@@ -40,6 +114,6 @@
             <li><a href="https://www.instagram.com/s2_suman.07/" target="_blank" rel="noopener noreferrer"><img src="./img/Instagram_logo.png" width="35px " height="35px" t=""> Instagram</a></li>
             <li><a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.jpg" width="35px " height="35px" t=""> Linkedin</a></li>
         </ol>
-    </div>
+    </span>
 </body>
 </html>
