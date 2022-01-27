@@ -4,38 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>webseries Thunder</title>
+    <!-- <link rel="stylesheet" href="web.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body{
-            background-image: url("./img/hdd.jpg");
-            background-attachment: cover;
-            background-repeat: no-repeat;
-            background-size: 100%;
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: skyblue;
+            height: 9vh;
+        }
+        .nav .ull li{
+            float: right;
+            clear: left;
+            text-decoration: none;
+            margin: 7px;
+            padding: 7px;
+        }
+        .nav .ull li a {
+            text-decoration: none;
+            font-size: 23px;
+            padding: 7px;
+            color: rgb(0, 0, 0);
+        }
+        .nav .ull li a:hover {
+            /* text-decoration: none; */
+            font-size: 23px;
+            color: rgb(255, 252, 252);
+            padding: 7px;
+            /* border: 1px solid purple; */
+            border-radius: 5px;
+        }
+        img{
+            border-radius: 180px;
+            border: 2px solid purple;
+            /* position: absolute;
+            top: 45px;
+            left: 3px; */
+            float: left;
+            clear: right;
         }
         .main{
+            background-color: teal;
+            height: 100vh;
+            width: 100%;
+        }
+        #li6{
+            font-size: 23px;
+            color: black;
+            position: absolute;
+            left:5px;
+        }
+        .apple{
+            font-size: 21px;
             color: white;
-            font-size: 43px;
-            position: relative;
-            animation-name: anime;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
+
         }
-        /* @keyframes anime{
-            from{color:violet}
-            to{color: springgreen;}
-        } */
-        @keyframes anime {
-            0%   {color:red; top: 100px; left: 100px; }
-            25%  {color:yellow; top: 200px; left: 200px;}
-            50%  {color:blue;  top: 300px; left: 300px;}
-            75%  {color:green;top: 400px; left: 400px; }
-            100% {color:red; top: 300px ; left: 600px; }
-        }
+        li a{
+    text-decoration: none;
+    /* font-size: px; */
+    padding: 12px;
+    margin: 3px;
+    color: #000;
+    font-weight: bold;
+}
+.link{
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    /* float: right;
+    clear: left; */
+
+
+}
+
+        
+.link ul li{
+    margin: 5px;
+    padding: 5px;
+    bottom: 0px;
+    text-align: center;
+}
+/* tyo youtube , facebook and git icon haru lai ta text jasto po treat gardo raixa yarr */
+.link ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: 1px solid skyblue;
+    border-radius: 31px;
+    background-color: rgb(18, 190, 125);
+    /* font-weight: bold; */
+}
+.link ul li a:hover{
+    /* color: rgb(66, 223, 19); */
+    background-color: darkgreen;
+    /* font-weight: bold; */
+}
     </style>
 </head>
 <body>
+    <div class="nav">
+        <ul class="ull" type="none">
+
+            <li><a href="bio.html">Skills and Abilites</a></li>
+            <li><a href="bio.html">Academic Qualification</a></li>
+            <li><a href="bio.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="home.html">Bio Data</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li id="li6"></li>
+        </ul>
+    </div>
+
     <div class="main">
-        About me !!!
+        <img src="./img/brp.jpg" height="360px" width="360px" alt="">
+        <span class="apple">
+
+            Hii stranger!!!
+            <br>
+            IT's me Suman Sharma -The Programmer
+        </span>
+        <div class="link">
+            <ul type="none">
+                <li id="ll1"><a href="https://www.facebook.com/profile.php?id=100019112559068" target="_blank" rel="noopener noreferrer" class="fa fa-facebook" style="font-size: 35px;"></a></li>
+
+                <li id="ll2"><a href="https://github.com/Me8848You" target="_blank" rel="noopener noreferrer"class="fa fa-github" style="font-size: 35px; "></a></li>
+
+                <li id="ll3" ><a href="https://www.instagram.com/s2_suman.07/"  target="_blank" rel="noopener noreferrer" class="fa fa-instagram" style="font-size: 35px;  selected "></a></li>
+
+                <li id="ll4"><a href="https://www.youtube.com/channel/UCtcos68-IcV5H1wzOLTQu0Q" target="_blank" rel="noopener noreferrer" class="fa fa-youtube" style="font-size: 35px; " ></a></li>
+
+                <li id="ll4"><a href="https://twitter.com/Me8848You?t=gcuojXybu_r6v7HmaOuIow&s=07" target="_blank" rel="noopener noreferrer" class="fa fa-twitter" style="font-size: 35px; " ></a></li>
+                
+            </ul>
+        </div>
     </div>
 </body>
+<script>
+    function settime()
+    {
+        var date= new Date();
+        var hr=date.getHours();
+        var min=date.getMinutes();
+        var sec=date.getSeconds();
+        // var am=date.getTimezoneOffset();
+
+        if(hr==0)
+        {
+            hr=12;
+        }
+        else if(hr>12)
+        {
+            hr=hr-12;
+        }
+        if(hr<10)
+        {
+            hr='0'+hr;
+        }
+        if(min<10)
+        {
+            min='0'+min;
+        }
+        if(sec<10)
+        {
+            sec='0'+sec;
+        }
+        var ttt=document.getElementById("li6");
+        ttt.innerHTML=hr+':'+min+':'+sec;
+    }
+    setInterval(settime,1000);
+</script>
 </html>

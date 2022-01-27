@@ -5,20 +5,21 @@
 .nav{
     background-color: rgb(1, 70, 61);
     color: white;
-    height: 65px;
+    height: 62px;
     width: 100%;
+    /* position: fixed; */
 }
 li a{
     text-decoration: none;
-    font-size: 30px;
+    /* font-size: px; */
     padding: 12px;
     margin: 12px;
     color: #000;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .link{
     position: absolute;
-    top: 150px;
+    top: 120px;
     right: 0px;
     /* float: right;
     clear: left; */
@@ -34,9 +35,17 @@ li a{
 }
 /* tyo youtube , facebook and git icon haru lai ta text jasto po treat gardo raixa yarr */
 .link ul li a{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 253);
     font-size: 25px;
     /* font-weight: bold; */
+}
+.link ul li a:hover{
+    color: rgb(43, 185, 15);
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+#ll3 a{
+    color: rgb(43, 185, 15);
 }
 #li1{
     float: left;
@@ -64,22 +73,24 @@ li a{
     clear: right;
 } 
 .ull li a:hover{
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
+    background-color: rgb(252, 252, 252);
+    border-radius: 12px;
+    color: rgb(68, 2, 2);
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* transition: 300ms; */
     
     /* background-attachment: cover; */
     /* border: 2px solid cyan; */
 }
 .ull li a{
     color: rgb(144, 255, 255);
-    font-size: 37px;
+    font-size: 33px;
     font-family: 'Times New Roman', Times, serif;
 }
 .premain{
     color: black;
     background: rgb(86,55,106);
-    background: linear-gradient(90deg, rgba(35, 96, 165, 0.671) 0%, rgba(99, 62, 62, 0.61) 49%, rgb(179, 20, 219) 96%);        
+    background: linear-gradient(90deg, rgba(35, 96, 165, 0.671) 0%, rgba(174, 207, 27, 0.849) 49%, rgb(179, 20, 219) 96%);        
     font-size: 32px;
     /* border-radius: 12px; */
     /* background:transparent; */
@@ -94,7 +105,7 @@ li a{
 }
 span{
     color: rgb(34,193,195);
-    font-size: 37px;
+    font-size: 29px;
     margin: 15px;
 
 }
