@@ -90,7 +90,7 @@ li a{
 .premain{
     color: black;
     background: rgb(86,55,106);
-    background: linear-gradient(90deg, rgba(35, 96, 165, 0.671) 0%, rgba(174, 207, 27, 0.849) 49%, rgb(179, 20, 219) 96%);        
+    background: linear-gradient(90deg, rgba(17, 201, 11, 0.671) 0%, rgba(233, 0, 116, 0.849) 49%, rgb(179, 20, 219) 96%);        
     font-size: 32px;
     /* border-radius: 12px; */
     /* background:transparent; */

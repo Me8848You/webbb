@@ -7,6 +7,10 @@
     <title>Contact us through</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
         .user ol li a{
             text-decoration: none;
             font-size: 25px;
@@ -18,11 +22,11 @@
         }
         .user ol li{
             margin: 12px;
-            padding: 5px;
+            padding: 10px;
 
         }
         body{
-            background-image: url("./img/backgr.jpg");
+            background-image: url("./img/neonnn.jpg");
             background-attachment:cover;
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -31,26 +35,35 @@
         }
         .form{
             border: 1px solid skyblue;
-            float: right; 
-            clear: both;
-            background-image: url("./img/images4.jpg" );
-            background-repeat: repeat;
+            text-align: center;
+            padding:50px;
+            margin: 0px 400px 0px 400px;
+            background-image: url("./img/offline.jpg" );
+            background-repeat:repeat;
             border-radius: 25px;
+            position: absolute;
+            top: 45px;
         }
-        .form tr td{
+        .form tr{
+            margin:34px;
+            padding: 45px;
+        }
+        .form p tr td{
             color: white;
             font-size: 23px;
             background-color: tomato;
+            margin: 12px;
+            padding: 34px;
         }
         h3{
-            color: rgb(2, 32, 1);
+            color: rgb(245, 245, 245);
             font-size: 23px;
             animation-name: animation;
             animation-iteration-count: infinite;
             animation-duration: 1s;
         }
         label{
-            color:rgb(0, 0, 0);
+            color:rgb(33, 240, 255);
             font-size: 20px;
             font-weight: bold;
         }
@@ -62,58 +75,69 @@
             form{color: rgb(1, 248, 83);}
             to{color: transparent;}
         }
+        table {
+            margin: 23px;
+            text-align: center;
+            border-radius: 10px;
+            padding: 19px;
+        }
+        body{
+            border: 5px solid rgb(211, 54, 198);
+        }
     </style>
 </head>
 <body>
-    <div class="form">
-        <table border="1"></table>
-        <h3>Wanna talk...?*</h3>
-        <h3>If then, Please provide the following information.</h3>
-        <hr style="color: black; font-weight: bold;">
-        <p>
-            <tr>
-                <td ><label for="name" >Name:</label></td>
-                <td><input type="text" name="name" id="name"></td>
-            </tr>
-        </p>
-        <p>
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" placeholder="Username@gmail.com" name="email" id="email"></td>
-            </tr>
-        </p>
-        <p>
-
-            <tr>
-                <td><label for="phone">Phone</label></td>
-                <td><input type="text" name="phone" id="phone"></td>
-            </tr>
-        </p>
-        <p>
-            
-            <tr>
-                <td><label for="address">Address</label></td>
-                <td><input type="text" name="address" id="address"></td>
-            </tr>
-        </p>
-        <p>
-            
-            <br>
-            <tr>
-                <!-- <td><label for="submit">Submit</label></td> -->
-                <th style="color: turquoise; font-size: 23px;"><input type="submit" value="Submit""></th>
-            </tr>
-        </p>
-    </div>
     <span class="user">
         <h2 style="color: cyan;">You can directly contact Us through </h2>
-        <ol type="1" style="font-size: 25px;">
+        <ol type="1" style="font-size: 25px; margin-left: 25px;">
             <li><a href="http://gmail.com" target="_blank" rel="noopener noreferrer"><img src="./img/email.png" width="35px " height="35px" t=""> Email</a></li>
             <li><a href="https://github.com/Me8848You" target="_blank" rel="noopener noreferrer"><img src="./img/gitt.png" width="35px " height="35px" t="">  GitHUB</a></li>
             <li><a href="https://www.facebook.com/profile.php?id=100019112559068" target="_blank" rel="noopener noreferrer"><img src="./img/fff.png" width="35px " height="35px" t=""> Facebook</a></li>
             <li><a href="https://www.instagram.com/s2_suman.07/" target="_blank" rel="noopener noreferrer"><img src="./img/Instagram_logo.png" width="35px " height="35px" t=""> Instagram</a></li>
             <li><a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.jpg" width="35px " height="35px" t=""> Linkedin</a></li>
         </ol>
+        <div class="form">
+            
+            <h3>Wanna talk...?*</h3>
+            <h3>If then, Please provide the following information.</h3>
+            <hr style="color: black; font-weight: bold;">
+            <table border="1">
+                <p>
+                    <tr>
+                        <td ><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                </p>
+                <p>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" placeholder="Username@gmail.com" name="email" id="email"></td>
+                    </tr>
+                </p>
+                <p>
+                    
+                    <tr>
+                        <td><label for="phone">Phone</label></td>
+                        <td><input type="text" name="phone" id="phone"></td>
+                    </tr>
+                </p>
+                <p>
+                    
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><input type="text" name="address" id="address"></td>
+                    </tr>
+                </p>
+                <p>
+                    
+                    <br>
+                    <tr>
+                        <!-- <td><label for="submit">Submit</label></td> -->
+                        <th colspan="2" style="color: turquoise; font-size: 23px;"><input type="submit" value="Submit""></th>
+                    </tr>
+                </p>
+            </table>
+        </div>
     </span>
 </body>
 </html>

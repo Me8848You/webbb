@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Sharma Official Website </title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    </style>
+    
+    
+</head>
+<body>
+    <div class="nav">
+        <ul type="none" class="ull">
+            <li id="li1" style="margin-top: 13px;"><a href="index.html" "></i> Home</a></li>
+            <li id="li2"style="margin-top: 13px;"><a href="about.html"> About</a></li>
+            <li id="li3"style="margin-top: 13px;"><a href="../gallery.html"  rel="noopener noreferrer">Gallery</a></li>
+            <li id="li4"style="margin-top: 13px;"><a href="contact.html"  rel="noopener noreferrer">Contact Me</a></li>
+            <li id="li5"style="margin-top: 13px;"><a href="special.html" rel="noopener noreferrer">Special</a></li>            
+            <li id="li6"></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="premain">
+            <h4 style="color:#ffcc99; font-style:normal; font-weight:normal;">"Hello World !!!" ______ :): _____[You decide]</h4>
+            <!-- It's me Suman Sharma 
+            <p>The authentic programmer who loves to print just "Hello World !!!" But without first "o"</p> -->
+        </div>
+        <span class="span">
+
+            <span class="span1">
+            1. The Programmer
+            </span>
+            <span class="span2">
+                2. Full stack developer
+            </span>
+            <span class="span3">
+                3. Freelancer
+            </span>
+            <span class="span4">
+                4. Enterpreneur
+            </span>
+            <span class="span5">
+                5. Youtuber
+            </span>
+            <span class="span5">
+                And many more...
+            </span>
+        <!-- </span>
+        <span class="imgg" style="border-radius: 25px; position: relative; top: 10px; right: 0px;">
+            <img src="./img/suman.JPG" height="250" width="250"  alt="">
+        </span> -->
+        <div class="link">
+            <ul type="none">
+                <li id="ll1"><a href="https://www.facebook.com/profile.php?id=100019112559068" target="_blank" rel="noopener noreferrer" class="fa fa-facebook" style="font-size: 35px;"></a></li>
+
+                <li id="ll2"><a href="https://github.com/Me8848You" target="_blank" rel="noopener noreferrer"class="fa fa-github" style="font-size: 35px; "></a></li>
+
+                <li id="ll3" ><a href="https://www.instagram.com/s2_suman.07/"  target="_blank" rel="noopener noreferrer" class="fa fa-instagram" style="font-size: 35px;  selected "></a></li>
+
+                <li id="ll4"><a href="https://www.youtube.com/channel/UCtcos68-IcV5H1wzOLTQu0Q" target="_blank" rel="noopener noreferrer" class="fa fa-youtube" style="font-size: 35px; " ></a></li>
+
+                <li id="ll4"><a href="https://twitter.com/Me8848You?t=gcuojXybu_r6v7HmaOuIow&s=07" target="_blank" rel="noopener noreferrer" class="fa fa-twitter" style="font-size: 35px; " ></a></li>
+                
+            </ul>
+        </div>
+        <!-- Copyright Section-->
+        <div class="copy">
+            <small style="color:rgb(203, 158, 11); position: absolute; bottom: -60px; right: 5px; font-size: 12px;">Copyright &copy; 2022 Suman Sharma</small>
+        </div>
+    </div> 
+</body>
+<script>
+    function settime()
+    {
+        var date= new Date();
+        var hr=date.getHours();
+        var min=date.getMinutes();
+        var sec=date.getSeconds();
+        // var am=date.getTimezoneOffset();
+
+        if(hr==0)
+        {
+            hr=12;
+        }
+        else if(hr>12)
+        {
+            hr=hr-12;
+        }
+        if(hr<10)
+        {
+            hr='0'+hr;
+        }
+        if(min<10)
+        {
+            min='0'+min;
+        }
+        if(sec<10)
+        {
+            sec='0'+sec;
+        }
+        var ttt=document.getElementById("li6");
+        ttt.innerHTML=hr+':'+min+':'+sec;
+    }
+    setInterval(settime,1000);
+</script>
+</html>
