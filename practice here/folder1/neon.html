@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon button</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh;
+            background:#031321;
+            font-family: consolas;
+
+        }
+        a{
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: aqua;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            overflow: hidden;
+            transition: 0.2s;
+            text-decoration: none;
+            font-size: 3em;
+            /* box-shadow: 0px 10px 10px 10px yellow; */
+            border: 0.125rem solid cyan;
+            border-radius: 25px;
+
+        }
+        a:hover{
+            color: #255784;
+            background:#2196f3;
+            box-shadow: 0 0 10px #2196f3, 0 10px 400px #2196f3, 0 0 80px #0f64ad;
+            border-radius: 25px;
+            transition-delay: 0.1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <a href="#">
+            <!-- <span></span>
+            <span></span>
+            <span></span>
+            <span></span> -->
+            NEON BUTTON
+        </a>
+    </div>
+</body>
+</html>

@@ -1,95 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title> Personal Portfolio Site</title>
-          <link rel="stylesheet" href="style.css">
-          <script src="https://kit.fontawesome.com/a076d05399.js">
-                </script>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    </head>
-        <body>
-            <nav class="navbar">
-                <div class="max-width">
-                     <div class="logo"><a href="#">port<span>flio.</span></a></div>
-                     <ul class="menu">
-                         <li><a href="#">Home</a></li>
-                         <li><a href="about.html">ABOUT</a></li>
-                         <li><a href="#">SERVICES</a></li>
-                         <li><a href="#">SKILLS</a></li>
-                         <li><a href="gallery.html">GALLERY</a></li>
-                         <li><a href="contact.html">CONTACT</a></li>
-                         <li><a href="mini_index.html">Demo</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Sharma Official Website </title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        b{
+            color: crimson;
+            -webkit-text-stroke: 2px rgb(247, 247, 247);
+            font-size: 60px;
+            font-weight: bold;
+        }
+        p{
+            font-size:60px ;
+            color: white;
+            font-weight: bold;
+            -webkit-text-stroke: 2px  rgb(221, 39, 39);
+            text-shadow: 5px 5px purple;
+        }
+        .span1{
+            font-size: 25px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin:25px;
+            padding: 10px;
+        }
+        body{
+            height: 150vh;
+            background-color: rgb(225, 255, 155);
+            background: linear-gradient(90deg, rgba(0, 173, 159, 0.671) 0%, rgba(233, 0, 116, 0.849) 49%, rgb(179, 20, 219) 96%);        
+        }
+        span2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
+        }
+        #aaa{
+            text-decoration: none;
+            font-size: 25px;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            border: 2px solid rgb(0, 138, 252);
+            border-radius: 25px;
+            background-color:rgb(0, 183, 255);
+            box-shadow: 10px 5px 25px rgb(40, 44, 245);
+            
+        }
+        #aaa:hover{
+            color: white;
+            box-shadow: 10px 10px 35px purple, inset 0px 0px 12px purple;
+        }
+        span{
+            /* border: 2px solid red; */
+            color: rgb(0, 0, 0);
+        }
+        .uul li{
+            border: 2px solid red;
+            margin: 25px;
+            margin-left: 0px;
+            border-radius: 12px;
+            padding: 3px 5px;
+            width: 23%;
+            box-shadow: inset 0px 10px 5px palevioletred, 0px 10px 10px rgb(218, 43, 43);
+            /* box-shadow: 10px 10px 35px purple, inset 0px 0px 12px purple; */
+        }
+        .alll{
+            position: absolute;
+            top: 150px;
+            right: 100px;
+        }
+        .post{
+            /* height: 40vh; */
+            border: 2px solid red;
+            border-radius: 25px;
+        }
+        .imggg img{
+            padding: 7px;
+            margin: 3px;
+            opacity: 0.7;
+        }
+        .imggg img:hover{
+            opacity: 1;
+            transition: 400ms;
+        }
+        
+        /* @media screen {
+            max width\
 
+            
+        } */
 
-                     </ul>
-                      <div class="menu-btn">
-                       <i class="fas fa-bars"></i>
-                                 </div>
+    </style>
 
-                </div>
-            </nav>
-           <!-- home section start -->
-           <section class="home" id="home">
-                <div class="max-width">
-                    <div class="home-content">
-                        <div class="text-1"> "HELLO WORLD!" </div>
-                        <div class="text-1">नमस्कार 🙏 My Name Is</div>
-                        <div class="text-2"><span style="color: crimson;">Su</span>man <span style="color: crimson;">Sh</span>arma</div>
-                        <div class="text-3">And I'm a <span> IT Student</span> </div>
-                        <a href="#">HIRE ME </a>                                                                                               
-                </div>
-           </section>
-            <!--about section start-->
-            <section class="about" id="about">
-                <div class="max-width">
-                    <h2 class="title">About Me</h2>
-                    <div class="about-content">
-                        <div class="column left">
-                            <img src="./images/img.jpg" style="border-radius: 25px;" alt="">
-                </div>
-                <div class="column right">
-                    <div class ="text">I'm Suman and I'm a<span> coder</span> </div> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae itaque veniam consequuntur rerum laboriosam quo animi, nemo quia dolore illo modi! Delectus ex a at sint, maxime vel saepe? Officiis temporibus fugiat rerum repellat inventore in perferendis cumque vitae alias consectetur a quidem ea itaque ab, repellendus, debitis, tenetur neque ex. Quo corporis vitae rem iure eos, similique ipsa!</p>
-<a href="#">Download CV</a> </div>
-           </section>
+    
+    
+</head>
+<body>
+    <div class="nav">
+        <ul type="none" class="ull">
+            <li id="li1" style="margin-top: 13px;"><a href="index.html" "><i class="fa fa-home"></i>Home</a></li>
+            <li id="li2" style="margin-top: 13px;"><a href="about.html"><i class="fa fa-code"></i>About</a></li>
+            <li id="li3"style="margin-top: 13px;"><a href="../gallery.html"  rel="noopener noreferrer"><i class="fa fa-photo"></i>Gallery</a></li>
+            <li id="li4"style="margin-top: 13px;"><a href="contact.html"  rel="noopener noreferrer"><i class="fa fa-phone"></i>Contact Me</a></li> 
+            <li id="li4"style="margin-top: 13px;"><a href="mini_index.html"  rel="noopener noreferrer"><i class="fa fa-search"></i>More</a></li> 
+            <li id="li6"> </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="span">
+            <div class="span1">
+                नमस्कार 🙏 It's Me ,<br>
+                <p>
 
-            <!--services section start-->
-            <section class="services" id="services">
-                <div class="max-width">
-                    <h2 class="title">My Services</h2>
-                    <div class="serv-content">
-                        <div class="card">
-                        <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Web design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, a doloribus. Ipsa repellat magnam deserunt, voluptates ut laboriosam eius voluptate saepe fugit cupiditate debitis beatae velit mollitia? Harum, veniam officia?</p>
-                      </div>   
-                      </div>
-               
-                         <div class="card">
-                        <div class="box">
-                         <i class="fas fa-chart-line"></i>
-                          <div class="text">Advertising</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, a doloribus. Ipsa repellat magnam deserunt, voluptates ut laboriosam eius voluptate saepe fugit cupiditate debitis beatae velit mollitia? Harum, veniam officia?</p>
-                       </div>
-                       </div>
-                       
-                  
-      
-                <div class="card">
-                <div class="box">
-               <i class="fas fa-code"></i>
-               <div class="text">Web design</div>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, a doloribus. Ipsa repellat magnam deserunt, voluptates ut laboriosam eius voluptate saepe fugit cupiditate debitis beatae velit mollitia? Harum, veniam officia?</p>
-                     </div>
-             </div> 
-           </div>
-           </div>
-         
-    </section>  
-             <script src="script.js"></script>
-        </body>
+                    <b>SU</b>MAN <b>SH</b>ARMA
+                </p>
+            And I'm a <span style="color: crimson; font-weight: bold;">IT Student</span>
+            <span class="alll">आफ्नै खुट्टामा अल्झेर लडेको हुँ - <br> एकैछिन पर्ख म आफै उठ्छु । 🌙💗</span>
+            <ul class="uul">
+                <li><a href="#">The Programmer</a></li>
+                <li><a href="#">Full Stack Developer</a></li>
+                <li><a href="#">Graphic Desiner</a></li>
+                <li><a href="#">Freelancer</a></li>
+                <li><a href="#">IT Student</a></li>
+                <li><a href="#">The Learner</a></li>
+                <li><a href="#"> The Coder</a></li>
+            </ul>
+            <!-- <div class="imgg" style="border-radius: 25px; position: relative; top: 10px; right: 0px;">
+                <img src="./img/suman.JPG" height="250" width="250" style="border-radius: 50%;"  alt="">
+            </div> -->
+            </div>
+            <!-- <div class="span2">
+                <a id="aaa" href="#">alpha mode</a>
+            </div> -->
+            
+        </div>
+        
+        <div class="link">
+            <ul type="none">
+                <li id="ll1"><a href="https://www.facebook.com/profile.php?id=100019112559068" target="_blank" rel="noopener noreferrer" class="fa fa-facebook" style="font-size: 35px; padding: 10px 16px;"></a></li>
+
+                <li id="ll2"><a href="https://github.com/Me8848You" target="_blank" rel="noopener noreferrer"class="fa fa-github" style="font-size: 35px; "></a></li>
+
+                <li id="ll3" ><a href="https://www.instagram.com/s2_suman.07/"  target="_blank" rel="noopener noreferrer" class="fa fa-instagram" style="font-size: 35px;   "></a></li>
+
+                <li id="ll4"><a href="https://www.youtube.com/channel/UCtcos68-IcV5H1wzOLTQu0Q" target="_blank" rel="noopener noreferrer" class="fa fa-youtube" style="font-size: 35px;" ></a></li>
+
+                <li id="ll4"><a href="https://twitter.com/Me8848You?t=gcuojXybu_r6v7HmaOuIow&s=07" target="_blank" rel="noopener noreferrer" class="fa fa-twitter" style="font-size: 35px; " ></a></li>
+                
+            </ul>
+        </div>
+        <!-- Copyright Section-->
+    </div> 
+    <hr>
+
+    <!-- <div class="copy">
+        <small style="color:rgb(0, 0, 0); position: absolute; bottom: -109vh; left: 25px; align-items: center; font-size: 17px;">Copyright &copy; 2022 Suman Sharma</small>
+    </div> -->
+    <hr>
+    <div class="post">
+        <div class="imggg" style="background-color: darkcyan;" >
+           <a href="upwork.com"> <img src="./img/main-qimg-88bf46f7afa376136cc642e39ebda7e7.png" height="300px " width="300px" style="border-radius: 35px; border: 2px solid purple;" alt=""></a>
+
+           <a href="freelance.com"> <img src="./img/free.png" height="300px " width="300px" style="border-radius: 35px; border: 2px solid purple;""  alt=""> </a>
+
+           <a href="#"> <img src="./img/full-stack1200.png" height="300px " width="300px" style="border-radius: 35px; border: 2px solid purple;""  alt=""> </a>
+
+           <a href="graphic.com"> <img src="./img/gra.jpg" height="300px " width="300px" style="border-radius: 35px; border: 2px solid purple;""  alt=""> </a>
+           
+            <span class="app" style="color: rgb(0, 0, 0); display: flex; align-items: center; justify-content: center;">
+                SUMAN SHARMA - The IT student from Nepal College Of Information Technology, Balkumari Lalitpur Nepal
+            </span>
+        </div>
+        <div class="premain">
+            <!-- <h3 style="color:#ffffff; font-style:normal; font-weight:normal;">"Hello World !!!" ______ :): _____[You decide]</h3> -->
+            <!-- It's me Suman Sharma 
+            <p>The authentic programmer who loves to print just "Hello World !!!" But without first "o"</p> -->
+            Hello World !!! _____:):_____[You Decide]
+        </div>
+        <div class="copy">
+            <small style="color:rgb(0, 0, 0); display: flex; justify-content: center; align-items: center; font-size: 17px;">Copyright &copy; 2022 Suman Sharma</small>
+        </div>
+
+    </div>
+</body>
+<script>
+    function settime()
+    {
+        var date= new Date();
+        var hr=date.getHours();
+        var min=date.getMinutes();
+        var sec=date.getSeconds();
+        // var am=date.getTimezoneOffset();
+
+        if(hr==0)
+        {
+            hr=12;
+        }
+        else if(hr>12)
+        {
+            hr=hr-12;
+        }
+        if(hr<10)
+        {
+            hr='0'+hr;
+        }
+        if(min<10)
+        {
+            min='0'+min;
+        }
+        if(sec<10)
+        {
+            sec='0'+sec;
+        }
+        var ttt=document.getElementById("li6");
+        ttt.innerHTML=hr+':'+min+':'+sec;
+    }
+    setInterval(settime,1000);
+</script>
 </html>
