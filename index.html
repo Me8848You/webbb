@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="web.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
     <style>
         b{
             color: crimson;
@@ -136,6 +138,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background: transparent;
         }
         #sk{
             border: 2px solid cyan;
@@ -150,12 +153,74 @@
             margin: 2px;
             margin-bottom: 2px;
         }
-        @media  only screen and (max-width:600px){
-            .nav .ull li a{
-                padding: 10px 0 !important;
+        @media  only screen and (max-width:7500px){
+            .nav ul li a{
+                float: left;
+                clear: both;
+                font-size: 15px;
+                margin: 12px;
+                margin-top: 0px;
+                /* background-color: black; */
+                color:rgb(0, 0, 0);
+                padding: 10px 8px;
+                border-radius: 9px;
+
             }
-            .nav  img{
-                height: 35px!important;
+            .uul li a{
+                font-size: 14px;
+                padding: 0px;
+                margin: 0;
+            }
+            .main{
+                background: url("img/suman2.jpeg")no-repeat top;
+                height: 106vh;
+            }
+            .span1 p b{
+                font-size: 32PX;
+
+            }
+            .span1 p{
+                font-size: 29px;
+            }
+            .alll{
+                font-size: 21px;
+                color: rgb(252, 252, 252);
+                position: absolute;
+                top: 100%;
+                right: 3%;
+            }
+            .post .imggg a img{
+                width: 130px;
+                height: 130px;
+            }
+            .app{
+                font-size: 15px;
+
+            }
+            .app strong{
+                font-size: small;
+                font-family: cursive;
+            }
+            .skills img{
+                margin: 5px;
+                height: 80px;
+                width: 80px;
+            }
+            .premain span a{
+                font-size: 17px;
+                position: absolute;
+                /* right:; */
+            }
+            .premain{
+                font-size: 21px;
+            }
+            #li6{
+                display: none;
+            }
+            #sk a{
+                font-size: 21px;
+                padding: 0px;
+                margin: 0px;
             }
         }
         
