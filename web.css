@@ -89,32 +89,47 @@ li a{
 } 
 .ull li a:hover{
     /* background-color: rgb(252, 252, 252); */
-    border-radius: 12px;
-    /* color: rgb(255, 255, 255); */
-    text-decoration: underline;
+    border-radius: 17px;
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline; */
     /* border: 1px solid rgb(0, 0, 0); */
     /* transition: 300ms; */
     
     /* background-attachment: cover; */
-    border: 2px solid rgb(255, 0, 212);
-    box-shadow: inset 0px 5px 12px rgb(23, 216, 216),inset -10px -10px 16px rgb(44, 255, 255),5px 10px 15px rgb(212, 50, 131);
+    background-color: #00eeff;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
     transition: 200ms;
+    -webkit-text-stroke: 1px rgb(59, 59, 59);
 }
-.ull li a{
+.ull li a{ 
+
     color: rgb(0, 0, 0);
     font-size: 33px;
     /* text-decoration: underline; */
     display:inline-flexbox;
     margin-right: 75px;
     padding-left: 0px;
-    /* margin-right: 72px; */
+    margin-right: 72px; 
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    border: 2px solid #5af4ff;
-    /* background-color: rgb(36, 119, 50); */
+    border: 2px solid #00eeff;
+    /* background-color: rgb(0, 0, 0); */
     border-radius: 17px;
-    box-shadow: inset 10px 10px 12px rgb(231, 2, 231),inset -10px -10px 16px rgb(247, 9, 195),5px 10px 15px rgb(104, 238, 238);
-}
+    font-weight: bold;
+    box-shadow: 5px 10px 15px rgb(0, 0, 0);
+    padding: 10px 7px;
+    
+    /* -webkit-text-stroke: 1px rgb(0, 255, 242); */
+} 
+/* .ull li a{
+    color:black;
+    font-size: 27px;
+    font-family: cursive;
+    font-weight: bold;
+    box-shadow: 2px 5px 7px black;
+    border: 2px solid black;
+} */
 .premain{
     color: black;
     background: rgb(86,55,106);
@@ -145,7 +160,7 @@ span{
     background: transparent;
     position: absolute;
     right: 35px;
-    top: 17px;
+    top: 2px;
     border-radius: 7px;
     animation-name: faltu;
     animation-iteration-count: infinite;

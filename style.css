@@ -71,10 +71,10 @@ transition: all 0.3s ease;
 /*home section stylying */
  .home{
       display:flex;
-      background:url("https://scontent.fbhr1-1.fna.fbcdn.net/v/t39.30808-6/271267533_931217807525296_6416021144079360558_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=QMZa-U_eTb0AX81pIDk&tn=bY3h8D6mQfz3ANyS&_nc_ht=scontent.fbhr1-1.fna&oh=00_AT9xPrM5OMZLVg_O9cyunCNTvt_qu-1aFMT81evNDt1YjQ&oe=62010E37");
+      /* background:url("https://scontent.fbhr1-1.fna.fbcdn.net/v/t39.30808-6/271267533_931217807525296_6416021144079360558_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=QMZa-U_eTb0AX81pIDk&tn=bY3h8D6mQfz3ANyS&_nc_ht=scontent.fbhr1-1.fna&oh=00_AT9xPrM5OMZLVg_O9cyunCNTvt_qu-1aFMT81evNDt1YjQ&oe=62010E37"); */
 
       /* background-image: url("./img/photo-1606568156390-8f4edb5ef31f.jpg" ) ; */
-      /* background:url("./images/sumanfb.jpg")no-repeat left; */
+      background:url("./images/sumanfb.jpg")no-repeat left;
       height: 150vh;
       color:whitesmoke;
       min-height:500px;
